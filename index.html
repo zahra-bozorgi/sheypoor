@@ -1,0 +1,1457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="css/main.css">
+    <title>sheypoor</title>
+</head>
+
+<body>
+    <header>
+        <div class="main-menu">
+            <div class="container">
+                <nav class="navbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">همه آگهی‌ها</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"> همه فروشگاه‌ها </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"> همه مشاوران </a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <a href="#" class="nav-link">پشتیبانی</a>
+                                <div class="dropdown-content">
+                                    <a href="#"> راهنما و پشتیبانی </a>
+                                    <a href="#"> تماس با پشتیبانی </a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="left-nav">
+                        <a href="#">
+                            <span>چت های من</span>
+                            <i class="fas fa-comments "></i>
+                        </a>
+                        <div class="dropdown">
+                            <a href="#">
+                                <span>حساب من</span>
+                                <i class="fas fa-user-circle user-icon"></i>
+                            </a>
+                            <div class="dropdown-content">
+                                <a href="#" class="head-item"> ورود / ثبت نام </a>
+                                <a href="#"> پسندیده‌ها </a>
+                                <a href="#"> آگهی های من </a>
+                                <a href="#"> خریدهای من </a>
+                                <a href="#"> مدیریت سفارش‌ها </a>
+                                <a href="#"> جستجوهای من </a>
+                                <a href="#"> چت های من </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="logo-bar">
+            <div class="container">
+                <div class="logo-content">
+                    <a href="#" class="navbar-brand">
+                        <img src="image/logo.png" class="img-fluid">
+                    </a>
+                    <a href="#" class="logo-bar-btn">
+                        <i class='fas fa-plus'></i>
+                        <span>ثبت آگهی رایگان</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <div class="container">
+            <section class="advanced-search">
+                <form method="get" action="#" novalidate>
+                    <div class="main-field">
+                        <div class="fields">
+                            <div class="input-field">
+                                <input type="search" autocomplete="off" placeholder="جستجو...">
+                            </div>
+                            <div class="form-select">
+                                <div class="dropdown-form" onclick="myShow()">
+                                    <a href="#">
+                                        <span> همه گروه‌ها </span>
+                                        <i class="fas fa-caret-down"></i>
+                                    </a>
+                                    <div class="dropdown-content" id="myShow">
+                                        <div class="category-container">
+                                            <div>
+                                                <div class="category-all">
+                                                    <a href="#" class="dropdown-title">
+                                                        <i class='fas fa-stream'></i>
+                                                        <span><strong>همه گروه‌ها</strong></span>
+                                                    </a>
+                                                </div>
+                                                <div>
+                                                    <a href="#" class="dropdown-title">
+                                                        <i class="fas fa-taxi category-icon-1"></i>
+                                                        <span><strong>وسایل نقلیه</strong></span>
+                                                    </a>
+                                                    <ul>
+                                                        <li><a href="#">خودرو</a></li>
+                                                        <li><a href="#">موتور سیکلت</a></li>
+                                                        <li><a href="#">خودرو کلاسیک</a></li>
+                                                        <li><a href="#">سنگین و نیمه سنگین</a></li>
+                                                        <li><a href="#">کشاورزی و عمرانی</a></li>
+                                                        <li><a href="#">لوازم و قطعات وسایل نقلیه</a></li>
+                                                        <li><a href="#">سایر وسایل نقلیه</a></li>
+                                                        <li><a href="#">اجاره خودرو</a></li>
+                                                        <li><a href="#">اجاره کشاورزی و عمرانی</a></li>
+                                                        <li><a href="#">قایق و تفریحات آبی</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div>
+                                                    <a href="#" class="dropdown-title">
+                                                        <i class="fa fa-umbrella category-icon-6"></i>
+                                                        <span><strong> ورزش فرهنگ فراغت</strong></span>
+                                                    </a>
+                                                    <ul>
+                                                        <li><a href="#">دوچرخه</a></li>
+                                                        <li><a href="#">تور مسافرتی</a></li>
+                                                        <li><a href="#">ورزشی</a></li>
+                                                        <li><a href="#">کتاب و لوازم تحریر</a></li>
+                                                        <li><a href="#">سرگرمی و اسباب بازی</a></li>
+                                                        <li><a href="#">حیوانات و لوازم</a></li>
+                                                        <li><a href="#">انواع ساز و آلات موسیقی</a></li>
+                                                        <li><a href="#">هنر و صنایع دستی</a></li>
+                                                        <li><a href="#">کلکسیونی</a></li>
+                                                        <li><a href="#">سایر سرگرمی ها</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div>
+                                                    <a href="#" class="dropdown-title">
+                                                        <i class="fas fa-home category-icon-2"></i>
+                                                        <span><strong>املاک</strong></span>
+                                                    </a>
+                                                    <ul>
+                                                        <li><a href="">رهن و اجاره خانه و آپارتمان</a></li>
+                                                        <li><a href="">خرید و فروش خانه و آپارتمان</a></li>
+                                                        <li><a href="">اجاره کوتاه مدت ویلا، سوئیت</a></li>
+                                                        <li><a href="">رهن و اجاره اداری، تجاری و صنعتی</a></li>
+                                                        <li><a href="">خرید و فروش اداری، تجاری و صنعتی</a></li>
+                                                        <li><a href="">زمین و باغ</a></li>
+                                                        <li><a href="">سایر املاک</a></li>
+
+                                                    </ul>
+                                                </div>
+                                                <div>
+                                                    <a href="#" class="dropdown-title">
+                                                        <i class="fa fa-laptop category-icon-7 "></i>
+                                                        <span><strong>لوازم الکترونیکی</strong></span>
+                                                    </a>
+                                                    <ul>
+                                                        <li><a href="#">لپ تاپ و کامپیوتر</a></li>
+                                                        <li><a href="#">صوتی و تصویری</a></li>
+                                                        <li><a href="#">دوربین عکاسی و فیلمبرداری و لوازم</a></li>
+                                                        <li><a href="#">کنسول بازی و لوازم</a></li>
+                                                        <li><a href="#">بازی های اینترنتی</a></li>
+                                                        <li><a href="#">سایر لوازم الکترونیکی</a></li>
+                                                        <li><a href="#">لوازم کامپیوتر و پرینتر</a></li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div>
+                                                    <a href="#" class="dropdown-title">
+                                                        <i class="fa fa-briefcase category-icon-3"></i>
+                                                        <span><strong>استخدام</strong></span>
+                                                    </a>
+                                                    <ul>
+                                                        <li><a href="#">آرایشگر | اپیلاسیون کار</a></li>
+                                                        <li><a href="#">آشپز و مشاغل مرتبط</a></li>
+                                                        <li><a href="#">انباردار</a></li>
+                                                        <li><a href="#">بازاریاب | ویزیتور</a></li>
+                                                        <li><a href="#">برنامه نویس | کارشناس شبکه</a></li>
+                                                        <li><a href="#">پرستار</a></li>
+                                                        <li><a href="#">پزشک و مشاغل مرتبط</a></li>
+                                                        <li><a href="#">پیک و تحصیلدار</a></li>
+                                                        <li><a href="#">تایپیست | مترجم</a></li>
+                                                        <li><a href="#">تبلیغات | مارکتینگ</a></li>
+                                                        <li><a href="#">تعمیرکار | مکانیک</a></li>
+                                                        <li><a href="#">تکنسین</a></li>
+                                                        <li><a href="#">حراست | نگهبان</a></li>
+                                                        <li><a href="#">حسابدار | مدیر مالی</a></li>
+                                                        <li>
+                                                            <span class="category-link">بیشتر</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div>
+                                                    <a href="#" class="dropdown-title">
+                                                        <i class="fa fa-handshake category-icon-8"></i>
+                                                        <span><strong>صنعتی، اداری و تجاری</strong></span>
+                                                    </a>
+                                                    <ul>
+                                                        <li><a href="#">ماشین الات و تجهیزات صنعتی</a></li>
+                                                        <li><a href="#">ابزار و یراق آلات</a></li>
+                                                        <li><a href="#">لوازم اداری</a></li>
+                                                        <li><a href="#">تجهیزات پزشکی و آزمایشگاهی</a></li>
+                                                        <li><a href="#">تجهیزات و لوازم کافه و رستوران</a></li>
+                                                        <li><a href="#">تجهیزات تجاری و فروشگاه</a></li>
+                                                        <li><a href="#">تجهیزات عمرانی و ساختمانی</a></li>
+                                                        <li><a href="#">تجهیزات کشاورزی و دامداری</a></li>
+                                                        <li><a href="#">اجاره تجهیزات صنعتی</a></li>
+                                                        <li><a href="#">دیگر</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div>
+                                                    <a href="#" class="dropdown-title">
+                                                        <i class="fa fa-wrench category-icon-4"></i>
+                                                        <span><strong>خدمات و کسب و کار</strong></span>
+                                                    </a>
+                                                    <ul>
+                                                        <li><a href="#">آرایشگری و زیبایی</a></li>
+                                                        <li><a href="#">آموزش</a></li>
+                                                        <li><a href="#">اجاره لوازم</a></li>
+                                                        <li><a href="#">اسباب کشی و حمل و نقل</a></li>
+                                                        <li><a href="#">اینترنت ، رایانه و موبایل</a></li>
+                                                        <li><a href="#">باغبانی و فضای سبز</a></li>
+                                                        <li><a href="#">پزشکی و درمانی</a></li>
+                                                        <li><a href="#">ترجمه و تایپ</a></li>
+                                                        <li><a href="#">تعمیرات</a></li>
+                                                        <li><a href="#">خرید و فروش عمده</a></li>
+
+                                                    </ul>
+                                                </div>
+                                                <div>
+                                                    <a href="#" class="dropdown-title">
+                                                        <i class="fas fa-mobile-alt category-icon-9"></i>
+                                                        <span><strong>موبایل، تبلت و لوازم</strong></span>
+                                                    </a>
+                                                    <ul>
+                                                        <li><a href="#">موبایل و تبلت</a></li>
+                                                        <li><a href="#">لوازم موبایل</a></li>
+                                                        <li><a href="#">سیمکارت و خط تلفن ثابت</a></li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div>
+                                                    <a href="#" class="dropdown-title">
+                                                        <i class="fas fa-couch category-icon-5"></i>
+                                                        <span><strong>لوازم خانگی</strong></span>
+                                                    </a>
+                                                    <ul>
+                                                        <li><a href="#">مبلمان و لوازم چوبی</a></li>
+                                                        <li><a href="#">وسایل برقی خانه و آشپزخانه</a></li>
+                                                        <li><a href="#">ظروف و لوازم آشپزخانه</a></li>
+                                                        <li><a href="#">دکوراسیون داخلی و روشنایی</a></li>
+                                                        <li><a href="#">فرش، گلیم و قالیچه</a></li>
+                                                        <li><a href="#">آنتیک</a></li>
+                                                        <li><a href="#">سایر لوازم خانه و حیاط</a></li>
+                                                        <li><a href="#">لوازم سرمایش و گرمایش</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div>
+                                                    <a href="#" class="dropdown-title">
+                                                        <i class="far fa-grin-hearts category-icon-10 "></i>
+                                                        <span><strong>لوازم شخصی</strong></span>
+                                                    </a>
+                                                    <ul>
+                                                        <li><a href="#">لباس ، کیف و کفش</a></li>
+                                                        <li><a href="#">زیورآلات و ساعت</a></li>
+                                                        <li><a href="#">بهداشتی، آرایشی، پزشکی</a></li>
+                                                        <li><a href="#">لباس و لوازم کودک و نوزاد</a></li>
+                                                        <li><a href="#">سایر لوازم شخصی</a></li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-select">
+                                <a href="#">
+                                    <span> همه ایران </span>
+                                    <i class="fas fa-caret-down"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn-search">
+                            <i class='fas fa-search'></i>
+                            جستجو
+                        </button>
+                    </div>
+                    <div class="search-fiald">
+                        <div class="categories">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <i class="fas fa-taxi category-icon-1 icon"></i>
+                                        <span class="title">
+                                            وسایل نقلیه
+                                            <span class="counter">(۱۸۶,۹۱۵)</span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fas fa-home category-icon-2 icon"></i>
+                                        <span class="title">
+                                            املاک
+                                            <span class="counter">(۳۳۳,۱۴۰)</span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-briefcase category-icon-3 icon"></i>
+                                        <span class="title">
+                                            استخدام
+                                            <span class="counter">(۳۳۳,۱۴۰)</span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-wrench category-icon-4 icon"></i>
+                                        <span class="title">
+                                            خدمات و کسب و کار
+                                            <span class="counter">(۳۳۳,۱۴۰)</span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fas fa-couch category-icon-5 icon"></i>
+                                        <span class="title">
+                                            لوازم خانگی
+                                            <span class="counter">(۳۳۳,۱۴۰)</span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-umbrella category-icon-6 icon"></i>
+                                        <span class="title">
+                                            ورزش فرهنگ فراغت
+                                            <span class="counter">(۳۳۳,۱۴۰)</span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-laptop category-icon-7 icon"></i>
+                                        <span class="title">
+                                            لوازم الکترونیکی
+                                            <span class="counter">(۳۳۳,۱۴۰)</span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-handshake category-icon-8 icon"></i>
+                                        <span class="title">
+                                            صنعتی، اداری و تجاری
+                                            <span class="counter">(۳۳۳,۱۴۰)</span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fas fa-mobile-alt category-icon-9 icon"></i>
+                                        <span class="title">
+                                            موبایل، تبلت و لوازم
+                                            <span class="counter">(۳۳۳,۱۴۰)</span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="far fa-grin-hearts category-icon-10 icon"></i>
+                                        <span class="title">
+                                            لوازم شخصی
+                                            <span class="counter">(۳۳۳,۱۴۰)</span>
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </form>
+            </section>
+            <div class="marketing-banner">
+                <a href="#">
+                    <img src="image/5c07ae23bf987bde356791b44d0c1f4d9192d8fe.jpg" class="img-fluid">
+                </a>
+            </div>
+            <div class="header">
+                <div class="serp-intro">
+                    <div class="serp-right">
+                        <a href="#"><i class="fas fa-home"></i></a>
+                        <i class="fas fa-angle-left"></i>
+                        <b>همه ایران</b>
+                    </div>
+                    <div class="serp-left">
+                        <div class="serp-image-option">
+                            <form action="#" method="get">
+                                <input type="checkbox" name="vehicle1" value="image">
+                                <label for="vehicle1"> آگهی‌های عکس‌‌دار </label>
+                            </form>
+                        </div>
+                        <div class="serp-sorting">
+                            <select>
+                                <option value="">جدیدترین</option>
+                                <option value="">ارزان‌ترین</option>
+                                <option value="">گران‌ترین</option>
+                                <option value="">نزدیک‌ترین</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="serp-title">
+                    <h1>همه آگهی ها در ایران</h1>
+                    <span>(۸۶۷,۹۰۶ آگهی)</span>
+                </div>
+
+            </div>
+            <section class="gallery">
+                <div class="gallery-content">
+                    <article class="gallery-item">
+                        <div class="image">
+                            <a href="#">
+                                <img src="image/413836123_3a8e6380e35f2ae88e6f95a0e0514ecf.webp" class="img-fluid">
+                            </a>
+                            <div class="overlay-img">
+                                <i class="fas fa-camera-retro"></i>
+                                <span>۵</span>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <i class="far fa-star star-icon"></i>
+                            <h2><a href="#"> رهن و اجاره اپارتمان </a></h2>
+                            <p>
+                                <time datetime="2022-08-29 16:39:19.634">لحظاتی پیش</time>
+                            </p>
+                            <p> تهران، تهران، اجاره دار </p>
+                            <div class="to-bottom">
+                                <p>
+                                    <span class="item-label">رهن:</span>
+                                    &nbsp
+                                    <strong class="item-price">۵۰,۰۰۰,۰۰۰</strong>
+                                    &nbsp تومان
+                                </p>
+                                <p>
+                                    <span class="item-label">اجاره:</span>
+                                    &nbsp
+                                    <strong class="item-price">۵,۰۰۰,۰۰۰</strong>
+                                    &nbsp تومان
+                                </p>
+                                <div class="contact">
+                                    <a href="#">
+                                        <i class="fa fa-phone"></i>
+                                        <span>تماس</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="gallery-item">
+                        <div class="image">
+                            <a href="#">
+                                <img src="image/413770962_ad11914245a23dde420f76f8763ff856.webp" class="img-fluid">
+                            </a>
+                            <div class="overlay-img">
+                                <i class="fas fa-camera-retro"></i>
+                                <span>۵</span>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <i class="far fa-star star-icon"></i>
+                            <div class="shop-logo">
+                                <img src="image/Image.jpg">
+                            </div>
+                            <h2><a href="#"> اجاره اداری 95 متر نوساز در سهروردی جنوبی </a></h2>
+                            <p>
+                                <time datetime="2022-08-29 16:39:19.634">لحظاتی پیش</time>
+                            </p>
+                            <p> تهران، تهران، سهروردی جنوبی </p>
+                            <div class="to-bottom">
+                                <p>
+                                    <span class="item-label">رهن:</span>
+                                    &nbsp
+                                    <strong class="item-price">۸۰۰,۰۰۰,۰۰۰</strong>
+                                    &nbsp تومان
+                                </p>
+
+                                <div class="contact">
+                                    <a href="#">
+                                        <i class="fa fa-phone"></i>
+                                        <span>تماس</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="gallery-item">
+                        <div class="image">
+                            <a href="#">
+                                <img src="image/413770962_ad11914245a23dde420f76f8763ff856.webp" class="img-fluid">
+                            </a>
+                            <div class="overlay-img">
+                                <i class="fas fa-camera-retro"></i>
+                                <span>۵</span>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <i class="far fa-star star-icon"></i>
+                            <div class="shop-logo">
+                                <img src="image/Image.jpg">
+                            </div>
+                            <h2><a href="#"> اجاره اداری 95 متر نوساز در سهروردی جنوبی </a></h2>
+                            <p>
+                                <time datetime="2022-08-29 16:39:19.634">لحظاتی پیش</time>
+                            </p>
+                            <p> تهران، تهران، سهروردی جنوبی </p>
+                            <div class="to-bottom">
+                                <p>
+                                    <span class="item-label">رهن:</span>
+                                    &nbsp
+                                    <strong class="item-price">۸۰۰,۰۰۰,۰۰۰</strong>
+                                    &nbsp تومان
+                                </p>
+
+                                <div class="contact">
+                                    <a href="#">
+                                        <i class="fa fa-phone"></i>
+                                        <span>تماس</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="gallery-item">
+                        <div class="image">
+                            <a href="#">
+                                <img src="image/413770962_ad11914245a23dde420f76f8763ff856.webp" class="img-fluid">
+                            </a>
+                            <div class="overlay-img">
+                                <i class="fas fa-camera-retro"></i>
+                                <span>۵</span>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <i class="far fa-star star-icon"></i>
+                            <div class="shop-logo">
+                                <img src="image/Image.jpg">
+                            </div>
+                            <h2><a href="#"> اجاره اداری 95 متر نوساز در سهروردی جنوبی </a></h2>
+                            <p>
+                                <time datetime="2022-08-29 16:39:19.634">لحظاتی پیش</time>
+                            </p>
+                            <p> تهران، تهران، سهروردی جنوبی </p>
+                            <div class="to-bottom">
+                                <p>
+                                    <span class="item-label">رهن:</span>
+                                    &nbsp
+                                    <strong class="item-price">۸۰۰,۰۰۰,۰۰۰</strong>
+                                    &nbsp تومان
+                                </p>
+
+                                <div class="contact">
+                                    <a href="#">
+                                        <i class="fa fa-phone"></i>
+                                        <span>تماس</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="gallery-item">
+                        <div class="image">
+                            <a href="#">
+                                <img src="image/413770962_ad11914245a23dde420f76f8763ff856.webp" class="img-fluid">
+                            </a>
+                            <div class="overlay-img">
+                                <i class="fas fa-camera-retro"></i>
+                                <span>۵</span>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <i class="far fa-star star-icon"></i>
+                            <div class="shop-logo">
+                                <img src="image/Image.jpg">
+                            </div>
+                            <h2><a href="#"> اجاره اداری 95 متر نوساز در سهروردی جنوبی </a></h2>
+                            <p>
+                                <time datetime="2022-08-29 16:39:19.634">لحظاتی پیش</time>
+                            </p>
+                            <p> تهران، تهران، سهروردی جنوبی </p>
+                            <div class="to-bottom">
+                                <p>
+                                    <span class="item-label">رهن:</span>
+                                    &nbsp
+                                    <strong class="item-price">۸۰۰,۰۰۰,۰۰۰</strong>
+                                    &nbsp تومان
+                                </p>
+
+                                <div class="contact">
+                                    <a href="#">
+                                        <i class="fa fa-phone"></i>
+                                        <span>تماس</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="gallery-item">
+                        <div class="image">
+                            <a href="#">
+                                <img src="image/413833838_3c609f716b4aa2ec70e98a64311018b8.webp" class="img-fluid">
+                            </a>
+                            <div class="overlay-img">
+                                <i class="fas fa-camera-retro"></i>
+                                <span>۱</span>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <i class="far fa-star star-icon"></i>
+                            <div class="shop-logo">
+                                <img src="image/Image (1).jpg">
+                            </div>
+                            <h2><a href="#"> 640 متر زمین سند شش دانگ در خط دریا سرخرود </a></h2>
+                            <p>
+                                <time datetime="2022-08-29 16:39:19.634">لحظاتی پیش</time>
+                            </p>
+                            <p> مازندران، سرخرود، مرکز شهر </p>
+                            <div class="to-bottom">
+
+                                <div class="contact">
+                                    <a href="#">
+                                        <i class="fa fa-phone"></i>
+                                        <span>تماس</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <div class="safe-shopping">
+                        <div class="safe-shopping-container swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="safe-info swiper-slide">
+                                    <i class="fas fa-truck-moving safe-icon"></i>
+                                    <p class="h1">خرید امن</p>
+                                    <p class="description">مبلغ پرداختی شما به امانت نزد شیپور می‌ماند تا کالا برایتان
+                                        ارسال
+                                        ‌شود، پس از دریافت کالا با تاییدِ شما مبلغ را به فروشنده منتقل می‌کنیم. </p>
+                                    <a href="#" class="safe-btn"> نمایش همه </a>
+                                </div>
+                                <article class="safe-box swiper-slide">
+                                    <div class="shop-logo">
+                                        <img src="image/Image (2).jpg">
+                                    </div>
+                                    <div class="safe-image">
+                                        <a href="#">
+                                            <img src="image/411215474_1895941e22cc1e4b924e910862dc36f5.webp"
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                    <div class="safe-content">
+                                        <div class="safe-title">
+                                            <h2>
+                                                <a href="#"> لپ تاپ hp مدل 8460 </a>
+                                            </h2>
+                                        </div>
+                                        <div class="to-bottom">
+                                            <a href="#" class="safe-shopping-btn">
+                                                <i class="fas fa-truck-moving"></i>
+                                                <span>خرید امن</span>
+                                            </a>
+                                            <p>
+                                                <strong class="item-price">۳,۳۲۰,۰۰۰</strong>
+                                                <span>تومان</span>
+                                            </p>
+                                            <p> گیلان، کوچصفهان، مرکز شهر </p>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="safe-box swiper-slide">
+                                    <div class="shop-logo">
+                                        <img src="image/Image (2).jpg">
+                                    </div>
+                                    <div class="safe-image">
+                                        <a href="#">
+                                            <img src="image/411215474_1895941e22cc1e4b924e910862dc36f5.webp"
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                    <div class="safe-content">
+                                        <div class="safe-title">
+                                            <h2>
+                                                <a href="#"> لپ تاپ hp مدل 8460 </a>
+                                            </h2>
+                                        </div>
+                                        <div class="to-bottom">
+                                            <a href="#" class="safe-shopping-btn">
+                                                <i class="fas fa-truck-moving"></i>
+                                                <span>خرید امن</span>
+                                            </a>
+                                            <p>
+                                                <strong class="item-price">۳,۳۲۰,۰۰۰</strong>
+                                                <span>تومان</span>
+                                            </p>
+                                            <p> گیلان، کوچصفهان، مرکز شهر </p>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="safe-box swiper-slide">
+                                    <div class="shop-logo">
+                                        <img src="image/Image (2).jpg">
+                                    </div>
+                                    <div class="safe-image">
+                                        <a href="#">
+                                            <img src="image/411215474_1895941e22cc1e4b924e910862dc36f5.webp"
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                    <div class="safe-content">
+                                        <div class="safe-title">
+                                            <h2>
+                                                <a href="#"> لپ تاپ hp مدل 8460 </a>
+                                            </h2>
+                                        </div>
+                                        <div class="to-bottom">
+                                            <a href="#" class="safe-shopping-btn">
+                                                <i class="fas fa-truck-moving"></i>
+                                                <span>خرید امن</span>
+                                            </a>
+                                            <p>
+                                                <strong class="item-price">۳,۳۲۰,۰۰۰</strong>
+                                                <span>تومان</span>
+                                            </p>
+                                            <p> گیلان، کوچصفهان، مرکز شهر </p>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="safe-box swiper-slide">
+                                    <div class="shop-logo">
+                                        <img src="image/Image (2).jpg">
+                                    </div>
+                                    <div class="safe-image">
+                                        <a href="#">
+                                            <img src="image/411215474_1895941e22cc1e4b924e910862dc36f5.webp"
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                    <div class="safe-content">
+                                        <div class="safe-title">
+                                            <h2>
+                                                <a href="#"> لپ تاپ hp مدل 8460 </a>
+                                            </h2>
+                                        </div>
+                                        <div class="to-bottom">
+                                            <a href="#" class="safe-shopping-btn">
+                                                <i class="fas fa-truck-moving"></i>
+                                                <span>خرید امن</span>
+                                            </a>
+                                            <p>
+                                                <strong class="item-price">۳,۳۲۰,۰۰۰</strong>
+                                                <span>تومان</span>
+                                            </p>
+                                            <p> گیلان، کوچصفهان، مرکز شهر </p>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="safe-box swiper-slide">
+                                    <div class="shop-logo">
+                                        <img src="image/Image (2).jpg">
+                                    </div>
+                                    <div class="safe-image">
+                                        <a href="#">
+                                            <img src="image/411215474_1895941e22cc1e4b924e910862dc36f5.webp"
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                    <div class="safe-content">
+                                        <div class="safe-title">
+                                            <h2>
+                                                <a href="#"> لپ تاپ hp مدل 8460 </a>
+                                            </h2>
+                                        </div>
+                                        <div class="to-bottom">
+                                            <a href="#" class="safe-shopping-btn">
+                                                <i class="fas fa-truck-moving"></i>
+                                                <span>خرید امن</span>
+                                            </a>
+                                            <p>
+                                                <strong class="item-price">۳,۳۲۰,۰۰۰</strong>
+                                                <span>تومان</span>
+                                            </p>
+                                            <p> گیلان، کوچصفهان، مرکز شهر </p>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="safe-box swiper-slide">
+                                    <div class="shop-logo">
+                                        <img src="image/Image (2).jpg">
+                                    </div>
+                                    <div class="safe-image">
+                                        <a href="#">
+                                            <img src="image/411215474_1895941e22cc1e4b924e910862dc36f5.webp"
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                    <div class="safe-content">
+                                        <div class="safe-title">
+                                            <h2>
+                                                <a href="#"> لپ تاپ hp مدل 8460 </a>
+                                            </h2>
+                                        </div>
+                                        <div class="to-bottom">
+                                            <a href="#" class="safe-shopping-btn">
+                                                <i class="fas fa-truck-moving"></i>
+                                                <span>خرید امن</span>
+                                            </a>
+                                            <p>
+                                                <strong class="item-price">۳,۳۲۰,۰۰۰</strong>
+                                                <span>تومان</span>
+                                            </p>
+                                            <p> گیلان، کوچصفهان، مرکز شهر </p>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="safe-box swiper-slide">
+                                    <div class="shop-logo">
+                                        <img src="image/Image (2).jpg">
+                                    </div>
+                                    <div class="safe-image">
+                                        <a href="#">
+                                            <img src="image/411215474_1895941e22cc1e4b924e910862dc36f5.webp"
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                    <div class="safe-content">
+                                        <div class="safe-title">
+                                            <h2>
+                                                <a href="#"> لپ تاپ hp مدل 8460 </a>
+                                            </h2>
+                                        </div>
+                                        <div class="to-bottom">
+                                            <a href="#" class="safe-shopping-btn">
+                                                <i class="fas fa-truck-moving"></i>
+                                                <span>خرید امن</span>
+                                            </a>
+                                            <p>
+                                                <strong class="item-price">۳,۳۲۰,۰۰۰</strong>
+                                                <span>تومان</span>
+                                            </p>
+                                            <p> گیلان، کوچصفهان، مرکز شهر </p>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="safe-box swiper-slide">
+                                    <div class="shop-logo">
+                                        <img src="image/Image (2).jpg">
+                                    </div>
+                                    <div class="safe-image">
+                                        <a href="#">
+                                            <img src="image/411215474_1895941e22cc1e4b924e910862dc36f5.webp"
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                    <div class="safe-content">
+                                        <div class="safe-title">
+                                            <h2>
+                                                <a href="#"> لپ تاپ hp مدل 8460 </a>
+                                            </h2>
+                                        </div>
+                                        <div class="to-bottom">
+                                            <a href="#" class="safe-shopping-btn">
+                                                <i class="fas fa-truck-moving"></i>
+                                                <span>خرید امن</span>
+                                            </a>
+                                            <p>
+                                                <strong class="item-price">۳,۳۲۰,۰۰۰</strong>
+                                                <span>تومان</span>
+                                            </p>
+                                            <p> گیلان، کوچصفهان، مرکز شهر </p>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="safe-box swiper-slide">
+                                    <div class="shop-logo">
+                                        <img src="image/Image (2).jpg">
+                                    </div>
+                                    <div class="safe-image">
+                                        <a href="#">
+                                            <img src="image/411215474_1895941e22cc1e4b924e910862dc36f5.webp"
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                    <div class="safe-content">
+                                        <div class="safe-title">
+                                            <h2>
+                                                <a href="#"> لپ تاپ hp مدل 8460 </a>
+                                            </h2>
+                                        </div>
+                                        <div class="to-bottom">
+                                            <a href="#" class="safe-shopping-btn">
+                                                <i class="fas fa-truck-moving"></i>
+                                                <span>خرید امن</span>
+                                            </a>
+                                            <p>
+                                                <strong class="item-price">۳,۳۲۰,۰۰۰</strong>
+                                                <span>تومان</span>
+                                            </p>
+                                            <p> گیلان، کوچصفهان، مرکز شهر </p>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+
+
+                            <div class="next">
+                                <button class="next-btn swiper-button-next">
+                                   
+                                </button>
+                            </div>
+                            <div class="prev">
+                                <button class="prev-btn swiper-button-prev">
+                                   
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="special">
+                        <label>
+                            <span class="special-title">ویترین سراسر ایران</span>
+                            <a href="#" class="special-link">(نمایش همه)</a>
+                            <span class="separator"></span>
+                        </label>
+                        <div class="special-content swiper mySwiper">
+                            <div class="special-container swiper-wrapper">
+                                <article class="safe-box swiper-slide">
+
+                                    <div class="safe-image">
+                                        <a href="#">
+                                            <img src="image/411215474_1895941e22cc1e4b924e910862dc36f5.webp"
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                    <div class="safe-content">
+                                        <div class="safe-title">
+                                            <h2>
+                                                <a href="#"> لپ تاپ hp مدل 8460 </a>
+                                            </h2>
+                                        </div>
+                                        <div class="to-bottom">
+
+                                            <p>
+                                                <strong class="item-price">۳,۳۲۰,۰۰۰</strong>
+                                                <span>تومان</span>
+                                            </p>
+                                            <p> گیلان، کوچصفهان، مرکز شهر </p>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="safe-box swiper-slide">
+
+                                    <div class="safe-image">
+                                        <a href="#">
+                                            <img src="image/411215474_1895941e22cc1e4b924e910862dc36f5.webp"
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                    <div class="safe-content">
+                                        <div class="safe-title">
+                                            <h2>
+                                                <a href="#"> لپ تاپ hp مدل 8460 </a>
+                                            </h2>
+                                        </div>
+                                        <div class="to-bottom">
+
+                                            <p>
+                                                <strong class="item-price">۳,۳۲۰,۰۰۰</strong>
+                                                <span>تومان</span>
+                                            </p>
+                                            <p> گیلان، کوچصفهان، مرکز شهر </p>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="safe-box swiper-slide">
+
+                                    <div class="safe-image">
+                                        <a href="#">
+                                            <img src="image/411215474_1895941e22cc1e4b924e910862dc36f5.webp"
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                    <div class="safe-content">
+                                        <div class="safe-title">
+                                            <h2>
+                                                <a href="#"> لپ تاپ hp مدل 8460 </a>
+                                            </h2>
+                                        </div>
+                                        <div class="to-bottom">
+
+                                            <p>
+                                                <strong class="item-price">۳,۳۲۰,۰۰۰</strong>
+                                                <span>تومان</span>
+                                            </p>
+                                            <p> گیلان، کوچصفهان، مرکز شهر </p>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="safe-box swiper-slide">
+
+                                    <div class="safe-image">
+                                        <a href="#">
+                                            <img src="image/411215474_1895941e22cc1e4b924e910862dc36f5.webp"
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                    <div class="safe-content">
+                                        <div class="safe-title">
+                                            <h2>
+                                                <a href="#"> لپ تاپ hp مدل 8460 </a>
+                                            </h2>
+                                        </div>
+                                        <div class="to-bottom">
+
+                                            <p>
+                                                <strong class="item-price">۳,۳۲۰,۰۰۰</strong>
+                                                <span>تومان</span>
+                                            </p>
+                                            <p> گیلان، کوچصفهان، مرکز شهر </p>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="safe-box swiper-slide">
+
+                                    <div class="safe-image">
+                                        <a href="#">
+                                            <img src="image/411215474_1895941e22cc1e4b924e910862dc36f5.webp"
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                    <div class="safe-content">
+                                        <div class="safe-title">
+                                            <h2>
+                                                <a href="#"> لپ تاپ hp مدل 8460 </a>
+                                            </h2>
+                                        </div>
+                                        <div class="to-bottom">
+
+                                            <p>
+                                                <strong class="item-price">۳,۳۲۰,۰۰۰</strong>
+                                                <span>تومان</span>
+                                            </p>
+                                            <p> گیلان، کوچصفهان، مرکز شهر </p>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="safe-box swiper-slide">
+
+                                    <div class="safe-image">
+                                        <a href="#">
+                                            <img src="image/411215474_1895941e22cc1e4b924e910862dc36f5.webp"
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                    <div class="safe-content">
+                                        <div class="safe-title">
+                                            <h2>
+                                                <a href="#"> لپ تاپ hp مدل 8460 </a>
+                                            </h2>
+                                        </div>
+                                        <div class="to-bottom">
+
+                                            <p>
+                                                <strong class="item-price">۳,۳۲۰,۰۰۰</strong>
+                                                <span>تومان</span>
+                                            </p>
+                                            <p> گیلان، کوچصفهان، مرکز شهر </p>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="safe-box swiper-slide">
+
+                                    <div class="safe-image">
+                                        <a href="#">
+                                            <img src="image/411215474_1895941e22cc1e4b924e910862dc36f5.webp"
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                    <div class="safe-content">
+                                        <div class="safe-title">
+                                            <h2>
+                                                <a href="#"> لپ تاپ hp مدل 8460 </a>
+                                            </h2>
+                                        </div>
+                                        <div class="to-bottom">
+
+                                            <p>
+                                                <strong class="item-price">۳,۳۲۰,۰۰۰</strong>
+                                                <span>تومان</span>
+                                            </p>
+                                            <p> گیلان، کوچصفهان، مرکز شهر </p>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="safe-box swiper-slide">
+
+                                    <div class="safe-image">
+                                        <a href="#">
+                                            <img src="image/411215474_1895941e22cc1e4b924e910862dc36f5.webp"
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                    <div class="safe-content">
+                                        <div class="safe-title">
+                                            <h2>
+                                                <a href="#"> لپ تاپ hp مدل 8460 </a>
+                                            </h2>
+                                        </div>
+                                        <div class="to-bottom">
+
+                                            <p>
+                                                <strong class="item-price">۳,۳۲۰,۰۰۰</strong>
+                                                <span>تومان</span>
+                                            </p>
+                                            <p> گیلان، کوچصفهان، مرکز شهر </p>
+                                        </div>
+                                    </div>
+                                </article>
+                                
+                            </div>
+                            <div class="next">
+                                <button class="next-btn swiper-button-next" >
+                                    
+                                </button>
+                            </div>
+                            <div class="prev">
+                                <button class="prev-btn swiper-button-prev" >
+                                    
+                                </button>
+                            </div>
+                        </div>
+                        <div class="separator-box"></div>
+                    </div>
+                    <article class="gallery-item">
+                        <div class="image">
+                            <a href="#">
+                                <img src="image/413833838_3c609f716b4aa2ec70e98a64311018b8.webp" class="img-fluid">
+                            </a>
+                            <div class="overlay-img">
+                                <i class="fas fa-camera-retro"></i>
+                                <span>۱</span>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <i class="far fa-star star-icon"></i>
+                            <div class="shop-logo">
+                                <img src="image/Image (1).jpg">
+                            </div>
+                            <h2><a href="#"> 640 متر زمین سند شش دانگ در خط دریا سرخرود </a></h2>
+                            <p>
+                                <time datetime="2022-08-29 16:39:19.634">لحظاتی پیش</time>
+                            </p>
+                            <p> مازندران، سرخرود، مرکز شهر </p>
+                            <div class="to-bottom">
+
+                                <div class="contact">
+                                    <a href="#">
+                                        <i class="fa fa-phone"></i>
+                                        <span>تماس</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="gallery-item">
+                        <div class="image">
+                            <a href="#">
+                                <img src="image/413833838_3c609f716b4aa2ec70e98a64311018b8.webp" class="img-fluid">
+                            </a>
+                            <div class="overlay-img">
+                                <i class="fas fa-camera-retro"></i>
+                                <span>۱</span>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <i class="far fa-star star-icon"></i>
+                            <div class="shop-logo">
+                                <img src="image/Image (1).jpg">
+                            </div>
+                            <h2><a href="#"> 640 متر زمین سند شش دانگ در خط دریا سرخرود </a></h2>
+                            <p>
+                                <time datetime="2022-08-29 16:39:19.634">لحظاتی پیش</time>
+                            </p>
+                            <p> مازندران، سرخرود، مرکز شهر </p>
+                            <div class="to-bottom">
+
+                                <div class="contact">
+                                    <a href="#">
+                                        <i class="fa fa-phone"></i>
+                                        <span>تماس</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="gallery-item">
+                        <div class="image">
+                            <a href="#">
+                                <img src="image/413833838_3c609f716b4aa2ec70e98a64311018b8.webp" class="img-fluid">
+                            </a>
+                            <div class="overlay-img">
+                                <i class="fas fa-camera-retro"></i>
+                                <span>۱</span>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <i class="far fa-star star-icon"></i>
+                            <div class="shop-logo">
+                                <img src="image/Image (1).jpg">
+                            </div>
+                            <h2><a href="#"> 640 متر زمین سند شش دانگ در خط دریا سرخرود </a></h2>
+                            <p>
+                                <time datetime="2022-08-29 16:39:19.634">لحظاتی پیش</time>
+                            </p>
+                            <p> مازندران، سرخرود، مرکز شهر </p>
+                            <div class="to-bottom">
+
+                                <div class="contact">
+                                    <a href="#">
+                                        <i class="fa fa-phone"></i>
+                                        <span>تماس</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="gallery-item">
+                        <div class="image">
+                            <a href="#">
+                                <img src="image/413833838_3c609f716b4aa2ec70e98a64311018b8.webp" class="img-fluid">
+                            </a>
+                            <div class="overlay-img">
+                                <i class="fas fa-camera-retro"></i>
+                                <span>۱</span>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <i class="far fa-star star-icon"></i>
+                            <div class="shop-logo">
+                                <img src="image/Image (1).jpg">
+                            </div>
+                            <h2><a href="#"> 640 متر زمین سند شش دانگ در خط دریا سرخرود </a></h2>
+                            <p>
+                                <time datetime="2022-08-29 16:39:19.634">لحظاتی پیش</time>
+                            </p>
+                            <p> مازندران، سرخرود، مرکز شهر </p>
+                            <div class="to-bottom">
+
+                                <div class="contact">
+                                    <a href="#">
+                                        <i class="fa fa-phone"></i>
+                                        <span>تماس</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="gallery-item">
+                        <div class="image">
+                            <a href="#">
+                                <img src="image/413833838_3c609f716b4aa2ec70e98a64311018b8.webp" class="img-fluid">
+                            </a>
+                            <div class="overlay-img">
+                                <i class="fas fa-camera-retro"></i>
+                                <span>۱</span>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <i class="far fa-star star-icon"></i>
+                            <div class="shop-logo">
+                                <img src="image/Image (1).jpg">
+                            </div>
+                            <h2><a href="#"> 640 متر زمین سند شش دانگ در خط دریا سرخرود </a></h2>
+                            <p>
+                                <time datetime="2022-08-29 16:39:19.634">لحظاتی پیش</time>
+                            </p>
+                            <p> مازندران، سرخرود، مرکز شهر </p>
+                            <div class="to-bottom">
+
+                                <div class="contact">
+                                    <a href="#">
+                                        <i class="fa fa-phone"></i>
+                                        <span>تماس</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+            </section>
+            <div class="pagination-box">
+                <div class="pagination">
+                    <a class="page-number active"> ۱ </a>
+                    <a class="page-number "> ۲ </a>
+                    <a class="page-number "> ۳ </a>
+                    <span class="page-nums">...</span>
+                    <span> ۳۵,۷۴۴ </span>
+                    <a class="page-number "> <i class="fas fa-angle-left"></i> </a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="main-footer">
+            <div class="container">
+                <div class="right-footer">
+                    <div>
+                        <p class="list-title">شیپور</p>
+                        <ul class="footer-list">
+                            <li><a href="#">درباره شیپور</a></li>
+                            <li><a href="#">بلاگ</a></li>
+                            <li><a href="#">نقشه سایت</a></li>
+                            <li><a href="#">فرصت های شغلی</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p class="list-title">راهنمای مشتریان</p>
+                        <ul class="footer-list">
+                            <li><a href="#">سوالات متداول</a></li>
+                            <li><a href="#"> تماس با پشتیبانی </a></li>
+                            <li><a href="#">راهنما و پشتیبانی</a></li>
+                            <li><a href="#">قوانین و مقررات</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p class="list-title">خدمات</p>
+                        <ul class="footer-list">
+                            <li><a href="#"> همه فروشگاه‌ها </a></li>
+                            <li><a href="#"> همه مشاوران </a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="left-footer">
+                    <a href="#" class="app-badge direct-download"></a>
+                    <a href="#" class="app-badge app-store"></a>
+                    <a href="#" class="all-app">
+                        <span class="text">همه مارکت‌ها</span>
+                        <span class="bullet">• • •</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="copywriter-bar">
+            <div class="container">
+                <div class="footer-copywriter">
+                    <p>کليه حقوق اين سایت متعلق به شرکت نت تجارت اهورا (شیپور) است.</p>
+                </div>
+                <ul class="footer-social ">
+                    <li><a href="#"> <i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+
+    <a class="scrolltotop" href="#" id="btn-back-to-top">
+        بازگشت به بالا
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        let mybutton = document.getElementById("btn-back-to-top");
+        window.onscroll = function () {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+            if (
+                document.body.scrollTop > 20 ||
+                document.documentElement.scrollTop > 20
+            ) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        mybutton.addEventListener("click", backToTop);
+
+        function backToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+
+
+    <script>
+        function myShow() {
+            var x = document.getElementById("myShow");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+
+
+
+    <script>
+        var swiper = new Swiper('.mySwiper', {
+            slidesPerView: 3,
+            spaceBetween: 10,
+            freeMode: true,
+
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
